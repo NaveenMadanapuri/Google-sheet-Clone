@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    font-family: poppins-regular;
+}
+#root{
+    width: 100vw;
+    height: 85vh;
+    height: 75vh;
+    overflow: scroll;
+    position: relative;
+    overflow-x: scroll; 
+}
+#header{
+    width: fit-content;
+    display: flex;
+    position: sticky;
+    top:0px;
+    z-index: 100;
+    background-color:lightgreen;
+}
+.head-cell:first-child{
+    /* background-color:#C4C7C5; */
+    min-width: 41px !important;
+    background-color: yellow;
+    /* border: 1px solid black; */
+    position: sticky;
+    left:0;
+    top:0;
+    
+}
+.head-cell{
+    min-width: 100px;
+    height:30px;
+    border: 0.1px solid black;
+    border-top-width:2px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#body{
+    
+    display: grid;
+    grid-template-columns: 42px auto;
+}
+#sno{
+    position: sticky;
+    left:0px;
+    z-index:100;
+    background-color: lightcoral;
+    
+}
+.sno-cell{
+    border: 0.1px solid black;
+    min-width: 30px;
+    height: 30px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.row{
+    display:flex;
+    
+}
+.cell{
+    border: 0.1px solid gray;
+    min-width: 100px;
+    height:30px;
+}
+.cell:focus{
+    outline: 2px solid #1B72E8;
+
+}
+#export{ 
+    cursor: pointer;
+    font-size: 32px !important;
+}
